@@ -8,136 +8,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curvy Website</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
-
-        html {
-            font-family: 'Ephesis', cursive;
-            width: 80vw;
-            margin: 0 auto;
-            font-size: 1.3rem;
+        body {
+            margin: 0;
+            color: #fff;
+            background: #202731;
+            overflow-x: hidden;
         }
 
-        .custom-shape-divider-top-1633025446 {
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+
+        .blue {
+            background: #3c31dd;
+        }
+
+        .red {
+            background: #dd3f31;
+        }
+
+        .pink {
+            background: #ff0066;
+        }
+
+        .dark {
+            background: #0f0f10;
+        }
+
+        .blue {
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+
+        .wave {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             overflow: hidden;
             line-height: 0;
-            transform: rotate(180deg);
         }
 
-        .custom-shape-divider-top-1633025446 svg {
+        .wave svg {
             position: relative;
             display: block;
-            width: calc(100% + 1.3px);
-            height: 180px;
+            width: calc(130% + 1.3px);
+            height: 150px;
         }
 
-        .custom-shape-divider-top-1633025446 .shape-fill {
-            fill: #BD6060;
+        .wave .shape-fill {
+            fill: #FFFFFF;
         }
 
-        .custom-shape-divider-top-1633025518 {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .spacer {
+            aspect-ratio: 960/300;
             width: 100%;
-            overflow: hidden;
-            line-height: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url('./layered-waves-haikei.svg')
+        }
+        .layer2 {
+            background-image: url('./layered-waves-haikei.svg');
+        }
+        .flip {
             transform: rotate(180deg);
         }
 
-        .custom-shape-divider-top-1633025518 svg {
-            position: relative;
-            display: block;
-            width: calc(100% + 1.3px);
-            height: 180px;
-        }
-
-        .custom-shape-divider-top-1633025518 .shape-fill {
-            fill: #BD6060;
+        .blob-motion {
+            position: absolute;
+            transform: translateY(-20%);
         }
     </style>
-
 
 </head>
 
 <body>
 
-    <section>
+    <section class="blue">
+        <h1>Nice Curves</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eius non? Quae autem eum quos suscipit
+            veritatis repellat at distinctio odio aliquam! Ratione quae magnam nesciunt itaque placeat accusamus
+            consectetur!</p>
+    </section>
+    <section class="red">
+        <h1>Nice Curves</h1>
+        <p>Accusamus mollitia eos numquam quasi minus aliquid porro nihil, architecto expedita voluptatem corporis
+            adipisci fugit repudiandae culpa illum aspernatur et, maxime ex autem vero, nostrum consectetur? Soluta vero
+            quia illum?</p>
 
-        <h1>Lorem Ipsum.</h1>
-
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita dignissimos inventore harum
-            eligendi dolorem aliquam perferendis officia. Laudantium molestiae aspernatur animi aliquam ullam sapiente
-            commodi libero omnis reprehenderit eos!
-            Repudiandae incidunt dolores excepturi suscipit error sint veniam facilis assumenda! Distinctio cumque
-            fugiat veritatis perferendis nihil eius laboriosam? Autem inventore similique officia maxime soluta
-            voluptatibus beatae, perferendis eos nihil quis?
-            Vero necessitatibus autem sequi perspiciatis sunt. Quae quia excepturi earum a quidem tenetur. Velit eveniet
-            soluta, sunt a quae ut alias, aut consequuntur, corporis ducimus similique necessitatibus quo ullam ad!
-        </p>
-
-        <div class="custom-shape-divider-top-1633025446">
+        <div class="wave">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
-                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
-
-        <h1>Lorem Ipsum.</h1>
-
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita dignissimos inventore harum
-            eligendi dolorem aliquam perferendis officia. Laudantium molestiae aspernatur animi aliquam ullam sapiente
-            commodi libero omnis reprehenderit eos!
-            Repudiandae incidunt dolores excepturi suscipit error sint veniam facilis assumenda! Distinctio cumque
-            fugiat veritatis perferendis nihil eius laboriosam? Autem inventore similique officia maxime soluta
-            voluptatibus beatae, perferendis eos nihil quis?
-            Vero necessitatibus autem sequi perspiciatis sunt. Quae quia excepturi earum a quidem tenetur. Velit eveniet
-            soluta, sunt a quae ut alias, aut consequuntur, corporis ducimus similique necessitatibus quo ullam ad!
-        </p>
-
-        <div class="custom-shape-divider-top-1633025518">
-            <svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
                 <path
-                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                     class="shape-fill"></path>
             </svg>
         </div>
-
-        <h1>Lorem Ipsum.</h1>
-
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita dignissimos inventore harum
-            eligendi dolorem aliquam perferendis officia. Laudantium molestiae aspernatur animi aliquam ullam sapiente
-            commodi libero omnis reprehenderit eos!
-            Repudiandae incidunt dolores excepturi suscipit error sint veniam facilis assumenda! Distinctio cumque
-            fugiat veritatis perferendis nihil eius laboriosam? Autem inventore similique officia maxime soluta
-            voluptatibus beatae, perferendis eos nihil quis?
-            Vero necessitatibus autem sequi perspiciatis sunt. Quae quia excepturi earum a quidem tenetur. Velit eveniet
-            soluta, sunt a quae ut alias, aut consequuntur, corporis ducimus similique necessitatibus quo ullam ad!
-        </p>
-
-        <h1>Lorem Ipsum.</h1>
-
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita dignissimos inventore harum
-            eligendi dolorem aliquam perferendis officia. Laudantium molestiae aspernatur animi aliquam ullam sapiente
-            commodi libero omnis reprehenderit eos!
-            Repudiandae incidunt dolores excepturi suscipit error sint veniam facilis assumenda! Distinctio cumque
-            fugiat veritatis perferendis nihil eius laboriosam? Autem inventore similique officia maxime soluta
-            voluptatibus beatae, perferendis eos nihil quis?
-            Vero necessitatibus autem sequi perspiciatis sunt. Quae quia excepturi earum a quidem tenetur. Velit eveniet
-            soluta, sunt a quae ut alias, aut consequuntur, corporis ducimus similique necessitatibus quo ullam ad!
-        </p>
-
     </section>
+    <div class="spacer layer2"></div>
+    <section class="pink">
+        <h1>Nice Curves</h1>
+        <p>Voluptatibus minima sequi at animi voluptates blanditiis iste suscipit esse id aut pariatur, magnam aliquid
+            porro totam dolorem perspiciatis excepturi quos voluptatem modi natus? Perspiciatis provident nihil impedit
+            totam voluptatibus!</p>
+
+            <svg id="visual" viewBox="0 0 900 300" width="900" height="300" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(435.79281550812607 157.42392604444052)">
+                    <path id="blob1"
+                        d="M91.9 -86.4C116.9 -66.9 133.5 -33.5 130.4 -3.1C127.3 27.3 104.7 54.7 79.7 73C54.7 91.3 27.3 100.7 4.8 95.8C-17.7 91 -35.4 72 -53.2 53.7C-71 35.4 -89 17.7 -97.4 -8.4C-105.7 -34.4 -104.5 -68.8 -86.7 -88.3C-68.8 -107.8 -34.4 -112.4 -0.5 -111.9C33.5 -111.5 66.9 -105.9 91.9 -86.4"
+                        fill="#BB004B"></path>
+                </g>
+                <g transform="translate(450.8831051584828 134.0869981275117)" style="visibility: hidden;">
+                    <path id="blob2"
+                        d="M83.7 -84.7C98.5 -68.8 93.7 -34.4 90 -3.8C86.2 26.9 83.4 53.7 68.6 77.7C53.7 101.7 26.9 122.9 -4.2 127.1C-35.4 131.4 -70.7 118.7 -85.9 94.7C-101 70.7 -96 35.4 -87.2 8.8C-78.3 -17.7 -65.7 -35.4 -50.5 -51.2C-35.4 -67 -17.7 -81 8.4 -89.4C34.4 -97.7 68.8 -100.5 83.7 -84.7"
+                        fill="#BB004B"></path>
+                </g>
+            </svg>
+
+            <script>
+                const tween = KUTE.fromTo(
+                    '#blob1',
+                    { path: '#blob1' },
+                    { path: '#blob2' },
+                    { repeat: 999, duration:3000, yoyo: true }
+                )
+                tween.start()
+            </script>
+    </section>
+    <div class="spacer layer2 flip"></div>
 
 </body>
 
